@@ -20,22 +20,12 @@ public class Config {
 	
 	 @Bean
 	 @Primary
-	 public ObjectMapper jacksonObjectMapper(Jackson2ObjectMapperBuilder builder) {
-	     XmlMapper mapper = (XmlMapper) builder
-	             .createXmlMapper(true)
-	             .build();
-
-	     mapper.configure(ToXmlGenerator.Feature.WRITE_XML_DECLARATION, true);
-	     return mapper;
-	 }
-	 
-	 @Bean
-	 @Primary
 	 public MappingJackson2XmlHttpMessageConverter mappingJackson2XmlHttpMessageConverter(
 	         Jackson2ObjectMapperBuilder builder) {
 	     ObjectMapper mapper = builder.createXmlMapper(true).build();
 	     ((XmlMapper) mapper).enable(ToXmlGenerator.Feature.WRITE_XML_DECLARATION);
 	     return new MappingJackson2XmlHttpMessageConverter(mapper);
 	 }
-	 
+
+ 	 
 }
