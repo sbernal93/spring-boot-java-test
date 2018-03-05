@@ -1,11 +1,11 @@
-package com.ncpaw.controller;
+package com.npaw.controller;
 
 import java.util.UUID;
 
-import com.ncpaw.model.Client;
-import com.ncpaw.model.DataModel;
-import com.ncpaw.model.Plugin;
-import com.ncpaw.model.PluginData;
+import com.npaw.model.Client;
+import com.npaw.model.DataModel;
+import com.npaw.model.Plugin;
+import com.npaw.model.PluginData;
 
 /**
  * 

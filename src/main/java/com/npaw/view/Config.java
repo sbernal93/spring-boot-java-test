@@ -1,4 +1,4 @@
-package com.ncpaw.view;
+package com.npaw.view;
 
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.context.annotation.Bean;

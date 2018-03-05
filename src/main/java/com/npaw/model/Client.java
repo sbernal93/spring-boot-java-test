@@ -1,4 +1,4 @@
-package com.ncpaw.model;
+package com.npaw.model;
 
 
 /**

@@ -1,4 +1,4 @@
-package com.ncpaw.model;
+package com.npaw.model;
 
 import java.util.ArrayList;
 import java.util.List;

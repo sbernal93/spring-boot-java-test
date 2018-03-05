@@ -1,4 +1,4 @@
-package com.ncpaw.view;
+package com.npaw.view;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
