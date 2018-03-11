@@ -1,0 +1,53 @@
+[
+   {
+      "accountCode": "clienteA",
+      "plugins": [
+         {
+            "targetDevice": "Xbox",
+            "version": "3.3.1",
+            "pingTime": "10",
+            "hosts": [
+               {
+                  "hostName": "clusterA.com",
+                  "percentTraffic": "70"
+               },
+               {
+                  "hostName": "clusterB.com",
+                  "percentTraffic": "30"
+               }
+            ]
+         },
+         {
+            "targetDevice": "Panasonic",
+            "version": "3.3.2",
+            "pingTime": "5",
+            "hosts": [
+            	{
+                  "hostName": "clusterB.com",
+                  "percentTraffic": "100"
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "accountCode": "clienteB",
+      "plugins": [
+          {
+            "targetDevice": "osmf",
+            "version": "3.3.1",
+            "pingTime": "5",
+            "hosts": [
+               {
+                  "hostName": "clusterA.com",
+                  "percentTraffic": "50"
+               },
+               {
+                  "hostName": "clusterB.com",
+                  "percentTraffic": "50"
+               }
+            ]
+         }
+        ] 
+      }
+]

@@ -1,5 +1,7 @@
 package com.npaw.model;
 
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 
@@ -9,19 +11,21 @@ package com.npaw.model;
 public class Client {
 
 	private String accountCode;
-	private String targetDevice;
+	private List<Plugin> plugins;
+	
 	
 	@Override
 	public String toString() {
-		return "Client [accountCode=" + accountCode + ", targetDevice=" + targetDevice + "]";
+		return "Client [accountCode=" + accountCode + ", plugins=" + plugins + "]";
+	}
+	public Client(String accountCode, List<Plugin> plugins) {
+		super();
+		this.accountCode = accountCode;
+		this.plugins = plugins;
 	}
 	public Client() {
 		super();
-	}
-	public Client(String accountCode, String targetDevice) {
-		super();
-		this.accountCode = accountCode;
-		this.targetDevice = targetDevice;
+		this.plugins = new ArrayList<>();
 	}
 	public String getAccountCode() {
 		return accountCode;
@@ -29,11 +33,11 @@ public class Client {
 	public void setAccountCode(String accountCode) {
 		this.accountCode = accountCode;
 	}
-	public String getTargetDevice() {
-		return targetDevice;
+	public List<Plugin> getPlugins() {
+		return plugins;
 	}
-	public void setTargetDevice(String targetDevice) {
-		this.targetDevice = targetDevice;
+	public void setPlugins(List<Plugin> plugins) {
+		this.plugins = plugins;
 	}
 	
 	

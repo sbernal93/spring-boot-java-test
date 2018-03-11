@@ -10,13 +10,14 @@ import java.util.List;
  */
 public class Plugin {
 
+	private String targetDevice;
 	private String version;
 	private int pingTime;
 	private List<Host> hosts;
 	
 	@Override
 	public String toString() {
-		return "Plugin [version=" + version + ", pingTime=" + pingTime + ", host=" + hosts + "]";
+		return "Plugin [version=" + version + ", pingTime=" + pingTime + ", host=" + hosts + ", targetDevice=" + targetDevice+ "]";
 	}
 
 	public Plugin() {
@@ -24,8 +25,9 @@ public class Plugin {
 		this.hosts = new ArrayList<>();
 	}
 
-	public Plugin(String version, int pingTime, List<Host> hosts) {
+	public Plugin(String targetDevice, String version, int pingTime, List<Host> hosts) {
 		super();
+		this.targetDevice = targetDevice;
 		this.version = version;
 		this.pingTime = pingTime;
 		this.hosts = hosts;
@@ -54,5 +56,14 @@ public class Plugin {
 	public void setHosts(List<Host> hosts) {
 		this.hosts = hosts;
 	}
+
+	public String getTargetDevice() {
+		return targetDevice;
+	}
+
+	public void setTargetDevice(String targetDevice) {
+		this.targetDevice = targetDevice;
+	}
+	
 	
 }
